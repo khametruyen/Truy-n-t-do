@@ -1,0 +1,11 @@
+import ThichButton from '../../components/ThichButton';
+
+export default function Truyen({ truyen }) {
+  return (
+    <div className="p-4">
+      <h1 className="text-xl font-bold">{truyen.tieuDe}</h1>
+      <ThichButton truyenId={truyen.id} />
+      <p>{truyen.noiDung}</p>
+    </div>
+  );
+}
