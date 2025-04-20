@@ -37,3 +37,57 @@ button {
 button:hover {
   background-color: #555;
 }
+/* Nút dễ nhìn hơn */
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #555;
+}
+
+/* Ô nhập liệu chung */
+input, textarea, select {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 0.6rem 1rem;
+  border: 1px solid #444;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #888;
+}
+
+/* Thanh cuộn gọn gàng */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Chương đã đọc */
+.chapter.read {
+  color: #888;
+  font-style: italic;
+}
+
+/* Chương đang đọc */
+.chapter.current {
+  color: #00bcd4;
+  font-weight: bold;
+}
